@@ -6,13 +6,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseTest {
 	WebDriver driver;
 
 	@BeforeClass
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\automation\\drives\\chromedriver.exe");
-		driver = new ChromeDriver();
+		driver = 	WebDriverManager.chromedriver().create();
 		driver.manage().window().maximize();
 		driver.get("https://www.saucedemo.com/");
 	}
