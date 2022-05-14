@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test  name="Test">
     <classes>
-      <class name="Tests.RemovProduct"/>
-      <class name="Tests.BuyProducts"/>
-      <class name="Tests.LoginTest"/>
+      <class name="tests.RemovProduct"/>
+      <class name="tests.BuyProducts"/>
+      <class name="tests.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
